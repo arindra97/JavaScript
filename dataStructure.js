@@ -71,4 +71,14 @@ console.log(allFavorites);
 const allFavorites1 = [...favorites, ...others];
 console.log(allFavorites1);
 
+// Destucturing Data
+
+const {firstName, lastName, age} = user;
+
+console.log(age)
+let place = "Depok"
+console.log(place)
+// menginisialisasi nilai baru melalui destructuring object
+({place} = user);
+console.log(place)
 
