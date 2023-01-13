@@ -76,9 +76,68 @@ console.log(allFavorites1);
 const {firstName, lastName, age} = user;
 
 console.log(age)
-let place = "Depok"
-console.log(place)
-// menginisialisasi nilai baru melalui destructuring object
-({place} = user);
-console.log(place)
+let place = "Semarang";
+let isMarried = false;
 
+// menginisialisasi nilai baru melalui destructuring object
+({isMarried, place} = user);
+console.log(place)
+console.log(isMarried)
+
+// Assigning to Different Local Variable Names
+const vehicle = {
+    model: "SUV", 
+    brand: "Hyundai", 
+};
+
+const {model: type, brand: merk} = vehicle;
+
+console.log(type, merk)
+
+// Destucturing Array
+const [firstFood, , thirdFood] = favorites;
+
+console.log(`This is value variable destucturing from array firstFood = ${firstFood}, thirdFood = ${thirdFood}`)
+
+let a = 1;
+let b = 2;
+
+console.log("Sebelum swap");
+console.log("Nilai a: " + a);
+console.log("Nilai b: " + b);
+
+[a, b] = [b, a] // menetapkan nilai a dengan nilai b dan nilai b dengan nilai a.
+
+console.log("Setelah swap");
+console.log("Nilai a: " + a);
+console.log("Nilai b: " + b);
+
+// Map
+const capital = new Map([
+  ["Jakarta", "Indonesia"],
+  ["London", "England"],
+  ["Tokyo", "Japan"]
+]);
+
+console.log(capital)
+console.log(capital.size);
+console.log(capital.get("London"));
+
+capital.set("New Delhi", "India");
+console.log(capital)
+console.log(capital.size);
+console.log(capital.get("New Delhi"));
+console.log(capital.get("Jakarta"));
+
+// .has .delete
+console.log(capital.has("Tokyo"))
+
+// Set
+const numberSet = new Set([1, 4, 6, 4, 1]);
+numberSet.add(5);
+numberSet.add(10);
+numberSet.add(6);
+
+numberSet.delete(4);
+
+console.log(numberSet);
