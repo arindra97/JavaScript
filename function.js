@@ -120,3 +120,45 @@ let addCounter = addp();
 console.log(addCounter());
 console.log(addCounter());
 console.log(addCounter());
+
+
+/**
+ * TODO:
+ * 1. Buatlah fungsi bernama minimal dengan ketentuan berikut:
+ *    - Menerima dua buah argumen number, a dan b.
+ *    - Mengembalikan nilai terkecil antara a atau b.
+ *    - Bila nilai keduanya sama, maka kembalikan dengan nilai a
+ *
+ *    contoh:
+ *    minimal(1, 4) // 1
+ *    minimal(3, 2) // 2
+ *    minimal(3, 3) // 3
+ *
+ * 2. Buatlah fungsi bernama power dengan ketentuan berikut:
+ *    - Menerima dua buah argumen number, a dan b.
+ *    - Mengembalikan nilai dari hasil perkalian a sebanyak b (fungsi kuadrat).
+ *
+ *    contoh:
+ *    power(7, 3) // 343
+ *    power(3, 3) // 27
+ *    power(4, 0.5) // 2
+ */
+
+
+// TODO
+const minimal = (a,b) => a>b ? b:a;
+
+const power = (a,b) => a**b;
+
+let check = minimal(4,3);
+console.log(check)
+
+check = power(4,3);
+console.log(check)
+
+function calculate(value) {
+    return value < 2 ? value : calculate(value - 1) + calculate(value - 2);
+}
+
+console.log(calculate(3));
+  
