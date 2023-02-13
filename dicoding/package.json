@@ -2,6 +2,7 @@
   "name": "coffemachine",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/arindra97/JavaScript/issues"
   },
-  "homepage": "https://github.com/arindra97/JavaScript#readme"
+  "homepage": "https://github.com/arindra97/JavaScript#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
